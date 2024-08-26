@@ -15,7 +15,7 @@
       function applyTheme(theme) {
         // Set the icon image
         const iconImage = document.getElementById("sunOrMoon").getElementsByTagName("img")[0];
-        iconImage.src = theme === "#121212" ? "https://github.com/aussieguy/DarkAndLight/moon-blue.png" : "https://github.com/aussieguy/DarkAndLight/sun.png";
+        iconImage.src = theme === "#121212" ? "https://github.com/aussieguy/DarkAndLight/blob/main/moon-blue.png" : "https://github.com/aussieguy/DarkAndLight/blob/main/sun.png";
 
 
         // Set the text color
