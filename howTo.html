@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f8f9fa;
+        font-family: Arial, sans-serif;
+      }
+      .content {
+        text-align: left;
+        font-size: larger;
+        max-width: 700px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        margin-bottom: 20px;
+      }
+      p {
+        margin: 10px 0;
+      }
+      br {
+        margin-bottom: 10px;
+      }
+    </style>
+
+  </head>
+  <body>
+    <!-- Add Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <!-- Add black and white theme -->
+    <script src="http://localhost:5000/theme-toggle.js"></script>  
+
+    <script type="text/javascript">
+      function homePage() {
+        let indexPage = "http://localhost:5000/index.html";
+        window.location.assign(indexPage);
+      }
+    
+      function howTo() {
+        let howToPage = "http://localhost:5000/howTo.html";
+        window.location.assign(howToPage);
+      }
+    </script>
+    
+    <nav class="navbar fixed-top">
+      <div class="container">
+        <a onclick="toggleDarkLightTheme()" id="sunOrMoon"><img src="moon-blue.png"></a> 
+        <a onclick="homePage()">ADD DARK & LIGHT THEMES WITH TWO LINES OF CODE</a>
+        <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="gemvalidaty" data-color="#FFDD00" data-emoji="☕"  data-font="Cookie" data-text="Buy me a coffee, please!" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+        <a onclick="howTo()">HOW ?</a>
+        <a onclick="window.open('mailto:address@mail.com?subject=Hello')">SAY HELLO !</a>        
+      </div>
+    </nav>
+
+    <div class="content">
+      <h1>Dark and Light Themes Made Easy</h1>
+      <p>For far too long, I would hand-code JavaScript every time I needed to implement a dark and light theme. This time, I decided to take a step back and write a hosted library that could be called anytime and anywhere I needed it. It's now two lines of code and easy to implement.</p>
+      
+      <p><strong>Step one:</strong> Insert the JavaScript script element</p>
+      &ltscript src="http://127.0.0.1:8080/testJS/theme-toggle.js"&gt&lt/script&gt
+      
+      <p><strong>Step two:</strong> Add something to click on</p>
+      &lta onclick="toggleDarkLightTheme()" id="sunOrMoon"&gt&ltimg src="sun.png"&gt&lt/a&gt
+      
+      <p><strong>Step three:</strong> Buy me a coffee, please!</p>
+    </div>
+
+
+  </body>
+</html>
+
+
