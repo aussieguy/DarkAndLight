@@ -15,7 +15,7 @@
       function applyTheme(theme) {
         // Set the icon image
         const iconImage = document.getElementById("sunOrMoon").getElementsByTagName("img")[0];
-        iconImage.src = theme === "#121212" ? "http://localhost:5000/moon-blue.png" : "http://localhost:5000/sun.png";
+        iconImage.src = theme === "#121212" ? "https://darkandlight.onrender.com/moon-blue.png" : "https://darkandlight.onrender.com/sun.png";
 
         // Set the text color
         document.body.style.color = theme === "#121212" ? "white" : "#121212";
